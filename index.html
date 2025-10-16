@@ -1,163 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Menu Végétarien - Gala Casino</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #121212;
-            color: #f1f1f1;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 30px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .title-container {
-            display: inline-block;
-            padding: 15px 40px;
-            border: 4px double #d4af37;
-            border-radius: 15px;
-            position: relative;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8em;
-            color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            box-shadow: 0 0 20px #d4af37;
-            background: radial-gradient(circle at center, #2c2b2b 0%, #000000 70%);
-        }
-        .title-container::before, .title-container::after {
-            content: "🎰 ♠️ ♦️ ♣️ ♥️";
-            position: absolute;
-            font-size: 1.5em;
-            color: #d4af37;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .title-container::before {
-            left: -120px;
-        }
-        .title-container::after {
-            right: -120px;
-        }
-        header p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.2em;
-            color: #bbb;
-            margin-top: 10px;
-            letter-spacing: 1.5px;
-        }
-        section {
-            margin-bottom: 50px;
-            border-left: 6px solid #d4af37;
-            padding-left: 20px;
-        }
-        section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #d4af37;
-            text-shadow: 1px 1px 5px #a57c1f;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        section h2 span.emoji {
-            font-size: 1.5em;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 15px 0;
-            font-size: 1.25em;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            border-bottom: 1px dotted #d4af37;
-            padding-bottom: 8px;
-        }
-        .dish-name {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-            color: #fff;
-            flex-grow: 1;
-        }
-        .dish-description {
-            font-style: italic;
-            color: #aaa;
-        }
-        /* Hover effect on dish names */
-        li:hover .dish-name {
-            color: #d4af37;
-            cursor: default;
-            transition: color 0.3s ease;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Végé</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="title-container">
-            Menu Végétarien
-        </div>
-        <p>Gala Casino 🎲 - Soirée d'exception</p>
-    </header>
-
-    <section>
-        <h2><span class="emoji">🍽️</span> Entrées</h2>
-        <ul>
-            <li>
-                <span class="dish-name">Entrée... 1</span>
-                <span class="dish-description">Description alléchante de l'entrée...</span>
-            </li>
-            <li>
-                <span class="dish-name">Entrée... 2</span>
-                <span class="dish-description">Une autre entrée savoureuse...</span>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2><span class="emoji">🥗</span> Plats principaux</h2>
-        <ul>
-            <li>
-                <span class="dish-name">Plat principal... 1</span>
-                <span class="dish-description">Description gourmande du plat...</span>
-            </li>
-            <li>
-                <span class="dish-name">Plat principal... 2</span>
-                <span class="dish-description">Une autre option délicieuse...</span>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2><span class="emoji">🍰</span> Desserts</h2>
-        <ul>
-            <li>
-                <span class="dish-name">Dessert... 1</span>
-                <span class="dish-description">Une douceur sucrée...</span>
-            </li>
-            <li>
-                <span class="dish-name">Dessert... 2</span>
-                <span class="dish-description">Un délice pour finir en beauté...</span>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2><span class="emoji">🍹</span> Boissons</h2>
-        <ul>
-            <li><span class="dish-name">Boisson... 1</span></li>
-            <li><span class="dish-name">Boisson... 2</span></li>
-            <li><span class="dish-name">Boisson... 3</span></li>
-        </ul>
-    </section>
+  <img src="menu.png" alt="Restaurant Menu" />
 </body>
 </html>
