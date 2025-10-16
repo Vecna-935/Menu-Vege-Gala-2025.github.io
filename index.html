@@ -3,130 +3,160 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Menu du Restaurant</title>
+    <title>Menu Végétarien - Gala Casino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff8f0;
-            color: #333;
+            background-color: #121212;
+            color: #f1f1f1;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 30px;
         }
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 5px;
-            color: #b85c38;
+        .title-container {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 4px double #d4af37;
+            border-radius: 15px;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 0 20px #d4af37;
+            background: radial-gradient(circle at center, #2c2b2b 0%, #000000 70%);
+        }
+        .title-container::before, .title-container::after {
+            content: "🎰 ♠️ ♦️ ♣️ ♥️";
+            position: absolute;
+            font-size: 1.5em;
+            color: #d4af37;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .title-container::before {
+            left: -120px;
+        }
+        .title-container::after {
+            right: -120px;
         }
         header p {
+            font-family: 'Roboto', sans-serif;
             font-size: 1.2em;
-            color: #7d5a4f;
+            color: #bbb;
+            margin-top: 10px;
+            letter-spacing: 1.5px;
         }
         section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            border-left: 6px solid #d4af37;
+            padding-left: 20px;
         }
         section h2 {
-            border-bottom: 2px solid #b85c38;
-            padding-bottom: 5px;
-            color: #b85c38;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #d4af37;
+            text-shadow: 1px 1px 5px #a57c1f;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        section h2 span.emoji {
+            font-size: 1.5em;
         }
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style: none;
+            padding: 0;
         }
         li {
-            margin: 12px 0;
+            margin: 15px 0;
+            font-size: 1.25em;
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px dotted #d4af37;
+            padding-bottom: 8px;
         }
         .dish-name {
-            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: #fff;
+            flex-grow: 1;
         }
         .dish-description {
             font-style: italic;
-            color: #666;
-            margin-left: 10px;
-            flex-grow: 1;
+            color: #aaa;
         }
-        .price {
-            color: #b85c38;
-            min-width: 50px;
-            text-align: right;
+        /* Hover effect on dish names */
+        li:hover .dish-name {
+            color: #d4af37;
+            cursor: default;
+            transition: color 0.3s ease;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Le Petit Bistro</h1>
-        <p>Menu du jour</p>
+        <div class="title-container">
+            Menu Végétarien
+        </div>
+        <p>Gala Casino 🎲 - Soirée d'exception</p>
     </header>
 
     <section>
-        <h2>Entrées</h2>
+        <h2><span class="emoji">🍽️</span> Entrées</h2>
         <ul>
             <li>
-                <span class="dish-name">Soupe à l'oignon</span>
-                <span class="dish-description">Gratinée au fromage</span>
-                <span class="price">5,50€</span>
+                <span class="dish-name">Entrée... 1</span>
+                <span class="dish-description">Description alléchante de l'entrée...</span>
             </li>
             <li>
-                <span class="dish-name">Salade Niçoise</span>
-                <span class="dish-description">Thon, olives, œufs, tomates</span>
-                <span class="price">7,00€</span>
+                <span class="dish-name">Entrée... 2</span>
+                <span class="dish-description">Une autre entrée savoureuse...</span>
             </li>
         </ul>
     </section>
 
     <section>
-        <h2>Plats principaux</h2>
+        <h2><span class="emoji">🥗</span> Plats principaux</h2>
         <ul>
             <li>
-                <span class="dish-name">Boeuf Bourguignon</span>
-                <span class="dish-description">Viande mijotée au vin rouge</span>
-                <span class="price">15,00€</span>
+                <span class="dish-name">Plat principal... 1</span>
+                <span class="dish-description">Description gourmande du plat...</span>
             </li>
             <li>
-                <span class="dish-name">Poulet Provençal</span>
-                <span class="dish-description">Avec olives et herbes de Provence</span>
-                <span class="price">14,00€</span>
+                <span class="dish-name">Plat principal... 2</span>
+                <span class="dish-description">Une autre option délicieuse...</span>
             </li>
         </ul>
     </section>
 
     <section>
-        <h2>Desserts</h2>
+        <h2><span class="emoji">🍰</span> Desserts</h2>
         <ul>
             <li>
-                <span class="dish-name">Crème brûlée</span>
-                <span class="dish-description">Crème vanillée caramélisée</span>
-                <span class="price">6,00€</span>
+                <span class="dish-name">Dessert... 1</span>
+                <span class="dish-description">Une douceur sucrée...</span>
             </li>
             <li>
-                <span class="dish-name">Tarte Tatin</span>
-                <span class="dish-description">Pommes caramélisées</span>
-                <span class="price">5,50€</span>
+                <span class="dish-name">Dessert... 2</span>
+                <span class="dish-description">Un délice pour finir en beauté...</span>
             </li>
         </ul>
     </section>
 
     <section>
-        <h2>Boissons</h2>
+        <h2><span class="emoji">🍹</span> Boissons</h2>
         <ul>
-            <li>
-                <span class="dish-name">Vin rouge (verre)</span>
-                <span class="price">4,50€</span>
-            </li>
-            <li>
-                <span class="dish-name">Eau minérale</span>
-                <span class="price">2,00€</span>
-            </li>
-            <li>
-                <span class="dish-name">Café</span>
-                <span class="price">2,50€</span>
-            </li>
+            <li><span class="dish-name">Boisson... 1</span></li>
+            <li><span class="dish-name">Boisson... 2</span></li>
+            <li><span class="dish-name">Boisson... 3</span></li>
         </ul>
     </section>
 </body>
