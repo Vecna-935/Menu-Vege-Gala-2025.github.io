@@ -1,9 +1,133 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu du Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #b85c38;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #7d5a4f;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            border-bottom: 2px solid #b85c38;
+            padding-bottom: 5px;
+            color: #b85c38;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dish-name {
+            font-weight: bold;
+        }
+        .dish-description {
+            font-style: italic;
+            color: #666;
+            margin-left: 10px;
+            flex-grow: 1;
+        }
+        .price {
+            color: #b85c38;
+            min-width: 50px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le Petit Bistro</h1>
+        <p>Menu du jour</p>
+    </header>
+
+    <section>
+        <h2>Entrées</h2>
+        <ul>
+            <li>
+                <span class="dish-name">Soupe à l'oignon</span>
+                <span class="dish-description">Gratinée au fromage</span>
+                <span class="price">5,50€</span>
+            </li>
+            <li>
+                <span class="dish-name">Salade Niçoise</span>
+                <span class="dish-description">Thon, olives, œufs, tomates</span>
+                <span class="price">7,00€</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Plats principaux</h2>
+        <ul>
+            <li>
+                <span class="dish-name">Boeuf Bourguignon</span>
+                <span class="dish-description">Viande mijotée au vin rouge</span>
+                <span class="price">15,00€</span>
+            </li>
+            <li>
+                <span class="dish-name">Poulet Provençal</span>
+                <span class="dish-description">Avec olives et herbes de Provence</span>
+                <span class="price">14,00€</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Desserts</h2>
+        <ul>
+            <li>
+                <span class="dish-name">Crème brûlée</span>
+                <span class="dish-description">Crème vanillée caramélisée</span>
+                <span class="price">6,00€</span>
+            </li>
+            <li>
+                <span class="dish-name">Tarte Tatin</span>
+                <span class="dish-description">Pommes caramélisées</span>
+                <span class="price">5,50€</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Boissons</h2>
+        <ul>
+            <li>
+                <span class="dish-name">Vin rouge (verre)</span>
+                <span class="price">4,50€</span>
+            </li>
+            <li>
+                <span class="dish-name">Eau minérale</span>
+                <span class="price">2,00€</span>
+            </li>
+            <li>
+                <span class="dish-name">Café</span>
+                <span class="price">2,50€</span>
+            </li>
+        </ul>
+    </section>
+</body>
 </html>
